@@ -35,20 +35,32 @@ limitations under the License.
 
 > Return a new [ndarray][@stdlib/ndarray/ctor] filled with linearly spaced values over a specified interval along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-ext-linspace
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
+var linspace = require( '@stdlib/blas-ext-linspace' );
 ```
 
 #### linspace( shape, start, stop\[, endpoint]\[, options] )
@@ -56,7 +68,7 @@ import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@
 Returns a new [ndarray][@stdlib/ndarray/ctor] filled with linearly spaced values over a specified interval along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var x = linspace( [ 4 ], 1.0, 4.0 );
 // returns <ndarray>
@@ -84,7 +96,7 @@ The function accepts the following options:
 By default, the function always includes the end of the interval in the list of values written to an output [ndarray][@stdlib/ndarray/ctor]. To exclude the end of the interval, provide an `endpoint` argument.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var x = linspace( [ 4 ], 1.0, 5.0, false );
 // returns <ndarray>
@@ -96,9 +108,9 @@ var arr = ndarray2array( x );
 When provided scalar or zero-dimensional [ndarray][@stdlib/ndarray/ctor] `start`, `stop`, and `endpoint` arguments, the values are broadcast across all elements in the shape defined by the complement of those dimensions specified by `options.dims`. To specify separate sub-array configurations, provide non-zero-dimensional [ndarray][@stdlib/ndarray/ctor] arguments.
 
 ```javascript
-import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
-import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+var array = require( '@stdlib/ndarray-array' );
+var BooleanArray = require( '@stdlib/array-bool' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var start = array( [ 1.0, 5.0 ] );
 var end = array( [ 3.0, 8.0 ] );
@@ -114,7 +126,7 @@ var arr = ndarray2array( x );
 By default, the function generates linearly spaced values along the last dimension of an output [ndarray][@stdlib/ndarray/ctor]. To perform the operation over specific dimensions, provide a `dims` option.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var x = linspace( [ 2, 2 ], 1.0, 4.0, {
     'dims': [ 0, 1 ]
@@ -128,7 +140,7 @@ var arr = ndarray2array( x );
 To specify the output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes], provide a `dtype` option.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var x = linspace( [ 4 ], 1.0, 4.0, {
     'dtype': 'float32'
@@ -144,8 +156,8 @@ var arr = ndarray2array( x );
 Fills an [ndarray][@stdlib/ndarray/ctor] with linearly spaced values over a specified interval along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 4 ] );
 // returns <ndarray>
@@ -212,14 +224,9 @@ The function accepts the following options:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
+```javascript
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var linspace = require( '@stdlib/blas-ext-linspace' );
 
 // Create two vectors defining interval bounds:
 var start = linspace( [ 5 ], 1, 5, true );
@@ -241,10 +248,6 @@ out = linspace( [ 5, 5 ], 1, 25, true, {
     'order': 'column-major'
 });
 console.log( ndarray2array( out ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -268,7 +271,7 @@ console.log( ndarray2array( out ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -311,8 +314,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -331,11 +334,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-linspace/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/esm
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
 </section>
 
