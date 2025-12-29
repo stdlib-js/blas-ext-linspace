@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-06)
+## Unreleased (2025-12-29)
 
 <section class="features">
 
@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`9d02160`](https://github.com/stdlib-js/stdlib/commit/9d021607aa675ebf1c53796be54565634bedea68) - normalize all dtypes to strings
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`9d02160`](https://github.com/stdlib-js/stdlib/commit/9d021607aa675ebf1c53796be54565634bedea68) - **fix:** normalize all dtypes to strings _(by Athan Reines)_
 -   [`4eb9d2a`](https://github.com/stdlib-js/stdlib/commit/4eb9d2a1dc5b2c5bd11a54ea62f1f88d2372d9a9) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`66f9e29`](https://github.com/stdlib-js/stdlib/commit/66f9e29b1c8622840b583123374c65a330712471) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`24e1741`](https://github.com/stdlib-js/stdlib/commit/24e174134cde28a3231f72920d83374ce6e9f402) - **docs:** update copy _(by Athan Reines)_

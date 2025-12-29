@@ -61,6 +61,8 @@
     "@stdlib/ndarray-base-broadcast-scalar": "^0.2.2",
     "@stdlib/ndarray-base-complement-shape": "github:stdlib-js/ndarray-base-complement-shape#main",
     "@stdlib/ndarray-base-dtype": "^0.2.2",
+    "@stdlib/ndarray-base-dtype-resolve-str": "^0.2.2",
+    "@stdlib/ndarray-base-dtypes2strings": "github:stdlib-js/ndarray-base-dtypes2strings#main",
     "@stdlib/ndarray-base-empty": "^0.3.0",
     "@stdlib/ndarray-base-maybe-broadcast-array": "^0.2.3",
     "@stdlib/ndarray-base-nullary-strided1d-dispatch-factory": "github:stdlib-js/ndarray-base-nullary-strided1d-dispatch-factory#main",
