@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-linspace/tags). For example,
+
+```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@deno/mod.js';
 ```
 
 #### linspace( shape, start, stop\[, endpoint]\[, options] )
@@ -214,7 +219,7 @@ The function accepts the following options:
 
 ```javascript
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-deno/mod.js';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@deno/mod.js';
 
 // Create two vectors defining interval bounds:
 var start = linspace( [ 5 ], 1, 5, true );
