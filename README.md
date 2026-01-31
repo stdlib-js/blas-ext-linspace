@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-esm/index.mjs';
 ```
 
 #### linspace( shape, start, stop\[, endpoint]\[, options] )
@@ -219,7 +219,7 @@ The function accepts the following options:
 <script type="module">
 
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@v0.1.0-esm/index.mjs';
 
 // Create two vectors defining interval bounds:
 var start = linspace( [ 5 ], 1, 5, true );
