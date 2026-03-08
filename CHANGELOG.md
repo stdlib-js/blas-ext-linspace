@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-08)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`6009d56`](https://github.com/stdlib-js/stdlib/commit/6009d566bdfc6bf15474c6d7a9c9b5564b1b61b6) - **bench:** refactor to use string interpolation in blas/ext/linspace [(#10827)](https://github.com/stdlib-js/stdlib/pull/10827) _(by Kamal Singh Rautela)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Kamal Singh Rautela
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
