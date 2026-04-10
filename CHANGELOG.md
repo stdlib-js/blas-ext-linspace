@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-08)
+## Unreleased (2026-04-10)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`eb1560d`](https://github.com/stdlib-js/stdlib/commit/eb1560d536dfc64c0b05c73a7ca0362b319d5e92) - **docs:** clean-up copy _(by Athan Reines)_
 -   [`6009d56`](https://github.com/stdlib-js/stdlib/commit/6009d566bdfc6bf15474c6d7a9c9b5564b1b61b6) - **bench:** refactor to use string interpolation in blas/ext/linspace [(#10827)](https://github.com/stdlib-js/stdlib/pull/10827) _(by Kamal Singh Rautela)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Kamal Singh Rautela
 
 </section>
