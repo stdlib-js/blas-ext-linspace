@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`ae704bb`](https://github.com/stdlib-js/stdlib/commit/ae704bb0a957d4dc0074d6123d1cddc25b45399e) - **docs:** improve doctests for ndarray instances in `blas/ext/linspace` [(#10542)](https://github.com/stdlib-js/stdlib/pull/10542) _(by AyushiJain18270, stdlib-bot)_
 -   [`eb1560d`](https://github.com/stdlib-js/stdlib/commit/eb1560d536dfc64c0b05c73a7ca0362b319d5e92) - **docs:** clean-up copy _(by Athan Reines)_
 -   [`6009d56`](https://github.com/stdlib-js/stdlib/commit/6009d566bdfc6bf15474c6d7a9c9b5564b1b61b6) - **bench:** refactor to use string interpolation in blas/ext/linspace [(#10827)](https://github.com/stdlib-js/stdlib/pull/10827) _(by Kamal Singh Rautela)_
 
@@ -25,9 +26,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   AyushiJain18270
 -   Kamal Singh Rautela
 
 </section>
