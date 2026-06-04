@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-22)
+## Unreleased (2026-06-04)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
 -   [`eae38b8`](https://github.com/stdlib-js/stdlib/commit/eae38b89b7d61dd025ba0779b01cea8779ad27e2) - **refactor:** replace internal utility _(by Athan Reines)_
 -   [`32f6869`](https://github.com/stdlib-js/stdlib/commit/32f6869a2e39b376329470a79eedeaa4388e8ac9) - **docs:** fix missing type _(by Athan Reines)_
 -   [`ae704bb`](https://github.com/stdlib-js/stdlib/commit/ae704bb0a957d4dc0074d6123d1cddc25b45399e) - **docs:** improve doctests for ndarray instances in `blas/ext/linspace` [(#10542)](https://github.com/stdlib-js/stdlib/pull/10542) _(by AyushiJain18270, stdlib-bot)_
@@ -28,11 +29,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   AyushiJain18270
 -   Kamal Singh Rautela
+-   Philipp Burckhardt
 
 </section>
 
