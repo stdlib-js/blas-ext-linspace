@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-04)
+## Unreleased (2026-06-25)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`ec68ca7`](https://github.com/stdlib-js/stdlib/commit/ec68ca7cc35210db29a028d561ec71968e2ff753) - **docs:** fix TSDoc errors in `blas` declarations [(#12529)](https://github.com/stdlib-js/stdlib/pull/12529) _(by Philipp Burckhardt, Athan Reines)_
 -   [`eae38b8`](https://github.com/stdlib-js/stdlib/commit/eae38b89b7d61dd025ba0779b01cea8779ad27e2) - **refactor:** replace internal utility _(by Athan Reines)_
 -   [`32f6869`](https://github.com/stdlib-js/stdlib/commit/32f6869a2e39b376329470a79eedeaa4388e8ac9) - **docs:** fix missing type _(by Athan Reines)_
